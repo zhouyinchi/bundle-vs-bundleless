@@ -1,0 +1,29 @@
+{
+  "name": "bundle-vs-bundleless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:common": "babel src/index.js --out-file dist/index-compiled-common.js --plugins @babel/plugin-transform-modules-commonjs",
+    "build:amd": "babel src/index.js --out-file dist/index-compiled-amd.js --plugins @babel/plugin-transform-modules-amd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouyinchi/bundle-vs-bundleless.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouyinchi/bundle-vs-bundleless/issues"
+  },
+  "homepage": "https://github.com/zhouyinchi/bundle-vs-bundleless#readme",
+  "dependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/plugin-transform-modules-amd": "^7.24.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-es2015": "^7.0.0-beta.53"
+  }
+}
